@@ -1,0 +1,269 @@
+body {
+    background: #FFFFFF;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 80px;
+}
+
+.nav-box {
+    width: 970px;
+    margin-bottom: 12px;
+    border-bottom:  1px solid #828282;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    width: 496px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.header-menu-item a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #828282;
+}
+
+.header-menu-item a:hover {
+    color: #070707;
+}
+
+.novik-info {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.name {
+    width: 300px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #070707;
+    margin-bottom: 50px;
+}
+
+.novik-photo {
+    width: 970px;
+    height: 387px;
+}
+
+#about {
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 100px 480px;
+    gap: 50px;
+    background: #F6F6F6;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 480px;
+}
+
+.about-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#skills {
+    padding-top: 100px;
+    margin: 0 auto;
+    gap: 50px;
+    width: 970px;
+    height: 564px;
+    background: #FFFFFF;
+} 
+
+.skills-info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    margin: 20px auto 50px;
+}
+
+.skills-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 97px;
+    width: 970px;
+    height: 230px;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 170px;
+    height: 230px;
+}
+
+.skills-item-icon {
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+.skills-item-text {
+    width: 78px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #828282; 
+}
+
+.skills-item-stars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: 170px;
+    height: 26px;
+}
+
+.skills-item-stars img {
+    width: 26px;
+    height: 26px;
+}
+
+#portfolio {
+    padding-top: 100px;
+    background: #F6F6F6;
+}
+
+#portfolio h2 {
+    margin-bottom: 50px;
+}
+
+#portfolio figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-image {
+    width: 970px;
+    height: 540px;
+}
+
+.portfolio-text {
+    width: 200px;
+    height: 50px;
+    padding: 40px 0 70px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.portfolio-text a {
+    text-decoration: none;
+    color: #070707;
+}
+
+#contacts {
+    margin: 0 auto;
+    padding: 100px 0;
+    gap: 60px;
+    width: 970px;
+    height: 400px;
+}
+
+#contacts h2 {
+    margin-bottom: 20px;
+}
+
+#contacts p {
+    width: 280px;
+    height: 46px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+}
+
+#contacts button {
+    display: block;
+    margin: 0 auto 40px;
+    padding: 0 16px;
+    width: 180px;
+    height: 44px;
+    background: #070707;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    width: 310px;
+    height: 40px;
+    margin: 0 auto 60px;
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-text {
+    width: 200px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
+}
