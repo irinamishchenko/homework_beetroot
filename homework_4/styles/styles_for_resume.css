@@ -1,0 +1,72 @@
+body {
+    background-color: #fef6f6;
+    width: 900px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+h1, h2, .main-info {
+    text-align: center;
+}
+
+.avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.main-info {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation li {
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+li a {
+    text-decoration: none;
+    color: #380303;
+    font-weight: 700;
+}
+
+li a:hover {
+    font-weight: 900;
+}
+
+#education, #work {
+    border-bottom: 1px solid black;
+}
+
+.university, .position {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.company {
+    font-weight: 600;
+}
+
+.social-container {
+    width: 200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
