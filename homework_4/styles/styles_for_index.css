@@ -41,6 +41,10 @@ header {
     color: #070707;
 }
 
+header nav ul li a.active-link {
+    color: #070707;
+}
+
 .novik-info {
     width: 970px;
     margin: 0 auto;
