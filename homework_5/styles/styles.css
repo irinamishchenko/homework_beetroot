@@ -1,0 +1,143 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 82px;
+    background: #4A4F56;
+}
+
+.header-title, .header-subtitle {
+    color: #FF8984;
+    text-align: center;
+}
+
+.header-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 19px 0 4px;
+}
+
+.header-subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.main {
+    background: #3B3F45;
+}
+
+.main-container {
+    max-width: 534px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.form-item {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-item:nth-child(odd) {
+    background: #88839E;
+}
+
+.form-item:nth-child(even) {
+    background: #7A7593;
+}
+
+.label-container {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.additional-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin-left: 4px;
+}
+
+.additional-text::before {
+    content: '(';
+}
+
+.additional-text::after {
+    content: ')';
+}
+
+.form-item:hover {
+    background: #625E77;
+    border: 3px solid #FFFFFF;
+    transition: all .1s ease-in;
+}
+
+.form-item:active {
+    background-color: #FF8984;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+.check {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-color: #FFFFFF;
+    margin-left: 12px; 
+    margin-right: 16px;
+}
+
+.check::after {
+    content: url(../images/done.png);
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    display: none;
+}
+
+input:checked + .check::after {
+    display: block;
+}
+
+.form-item:checked + .check::after {
+    display: block;
+}
+
+input:checked ~ .label-container {
+    text-decoration: line-through;
+}
+
+input:checked ~ .additional-text {
+    text-decoration: line-through;
+}
+
+button {
+    width: 534px;
+    height: 45px;
+    background: #4A4F56;
+    border: none;
+    margin: 45px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FF8984;
+}
