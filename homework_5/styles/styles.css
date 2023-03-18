@@ -44,6 +44,8 @@ body {
     align-items: center;
     cursor: pointer;
     position: relative;
+    border-top: 3px solid rgba(255, 255, 255, 0);
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 
 .form-item:nth-child(odd) {
@@ -82,7 +84,8 @@ body {
 
 .form-item:hover {
     background: #625E77;
-    border: 3px solid #FFFFFF;
+    border-top: 3px solid rgba(255, 255, 255, 1);
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
     transition: all .1s ease-in;
 }
 
