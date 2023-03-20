@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Homework 6</title>
+  </head>
+  <body>
+    <form action="" method="GET">
+      <label for="name"
+        >Повне ім'я
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Іван Мазепа"
+          value=""
+          autofocus
+          required
+      /></label>
+      <label for="email"
+        >Email
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="mazepa@gmail.com"
+          value=""
+          required
+      /></label>
+      <label for="password"
+        >Пароль
+        <input type="password" id="password" name="password" value="" required
+      /></label>
+      <label for="password-again"
+        >Пароль ще раз
+        <input
+          type="password"
+          id="password-again"
+          name="password-again"
+          value=""
+          required
+      /></label>
+      <div class="gender-box">
+        <span>Стать</span>
+        <div class="genders">
+          <label for="male">
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              required
+            />чоловіча</label
+          >
+          <label for="female">
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+            />жіноча</label
+          >
+        </div>
+      </div>
+      <label class="age-box" for="age"
+        >Вік
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="1"
+          max="100"
+          value=""
+          required
+        />
+      </label>
+      <div class="course-box">
+        <label for="course">Курс</label>
+        <select name="course" id="course" required>
+          <option value="">Виберіть курс</option>
+          <option value="front-end">Front-End</option>
+          <option value="back-end">Back-End</option>
+          <option value="project-management">Project Management</option>
+          <option value="QA-manual">QA Manual</option>
+        </select>
+      </div>
+      <label for="address"
+        >Повна адреса
+        <textarea
+          name="address"
+          id="address"
+          cols="20"
+          rows="3"
+          placeholder="Запорозька Січ, буд. 1"
+          value=""
+          required
+        ></textarea>
+      </label>
+      <label for="agreement"
+        ><input type="checkbox" id="agreement" value="" required /> Я погоджуюсь
+        з обробкою персональних даних</label
+      >
+      <div class="buttons">
+        <input type="reset" value="Очистити форму" />
+        <input type="submit" value="Зареєструватися" />
+      </div>
+    </form>
+  </body>
+</html>

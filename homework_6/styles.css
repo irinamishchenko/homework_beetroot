@@ -1,0 +1,53 @@
+form {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: bisque;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.gender-box {
+    display: flex;
+    gap: 137px;
+    margin-bottom: 20px;
+}
+
+.genders {
+    display: flex;
+}
+
+.age-box {
+    justify-content: flex-start;
+    gap: 157px;
+}
+
+.course-box {
+    display: flex;
+    gap: 148px;
+    margin-bottom: 10px;
+}
+
+input[id="agreement"] {
+    margin: 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons input {
+    background-color: rgb(232, 188, 135);
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.buttons input:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+
