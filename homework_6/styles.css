@@ -8,6 +8,7 @@ form {
 label {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .gender-box {
@@ -28,6 +29,7 @@ label {
 .course-box {
     display: flex;
     gap: 148px;
+    margin-bottom: 10px;
 }
 
 input[id="agreement"] {
