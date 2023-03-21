@@ -1,0 +1,123 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    width: 200px;
+    height: 32px;
+    margin-right: 198px;
+}
+
+.header-menu {
+    display: inline-block;
+    padding-top: 26px;
+    margin-right: 145px;
+}
+
+.header-menu-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-menu-item a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #2F281E;
+}
+
+.header-menu-item a:hover {
+    color: #FF9900;
+}
+
+.header-button {
+    width: 110px;
+    height: 46px;
+    background-color: transparent;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+}
+
+.header-button-text {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2F281E;
+}
+
+.header-button:hover {
+    background: #FF9900;
+}
+
+.header-button:hover .header-button-text {
+    color: #FFFFFF;
+}
+
+.header-button:first-of-type {
+    margin-right: 32px;
+}
+
+.first-screen {
+    width: 1200px;
+    margin: 70px auto 0;
+}
+
+.first-screen-info {
+    display: inline-block;
+    width: 500px;
+    height: 301px;
+    margin-right: 50px;
+    padding-top: 97px;
+}
+
+.first-screen-info h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+
+.first-screen-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #544837;
+    margin-bottom: 20px;
+}
+
+.first-screen-info button {
+    width: 180px;
+    height: 50px;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+}
+
+.first-screen-info button a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.first-screen img {
+    width: 644px;
+    height: 495px;
+    margin-top: -220px;
+}
