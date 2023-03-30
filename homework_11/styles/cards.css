@@ -1,0 +1,125 @@
+header {
+    height: 80px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 70px;
+}
+
+.header-info {
+    width: 361px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-language {
+    text-decoration: none;
+    font-family: 'Tourney', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.header-nav li:last-of-type:before {
+    content: "/";
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-right: 10px;
+}
+
+header img {
+    width: 238px;
+    height: 54px;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 8px;
+    background: #000000;
+    margin-right: 20px;
+}
+
+.cards-container {
+    display: flex;
+    width: 1200px;
+    gap: 30px;
+    flex-wrap: wrap;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #BFBFBF;
+    padding: 20px 15px;
+}
+
+.card-inner {
+    position: relative;
+    width: 270px;
+    height: 180px;
+}
+
+.card-inner:hover {
+    transform: rotateX(180deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateX(180deg);
+}
+
+
