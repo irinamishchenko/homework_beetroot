@@ -1,0 +1,349 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background: #FFFFFF;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 88px;
+    margin-bottom: 40px;
+}
+
+.nav-box {
+    width: 970px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #828282;
+    height: 100%;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-menu-item a {
+    text-decoration: none;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+
+.header-menu-item a:hover {
+    color: #070707;
+}
+
+header nav ul li a.active-link {
+    color: #070707;
+}
+
+.novik-info-wrapper {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.novik-info {
+    height: 124px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.name {
+    width: 118px;
+    height: 124px;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #070707;
+}
+
+.position {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.languages {
+    transform: rotate(-90deg);
+    margin-bottom: 25px;
+    display: flex;
+    width: 65px;
+    justify-content: space-between;
+}
+
+.languages li a {
+    text-decoration: none;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    text-transform: uppercase;
+}
+
+.languages .active-language a {
+    color: #070707;
+}
+
+.active-language::before {
+    content: "|";
+    margin-right: 5px;
+    color: #070707;
+    font-family: 'Gilroy';
+    font-weight: bold;
+}
+
+.novik-photo {
+    width: 970px;
+    height: 387px;
+}
+
+#about {
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 100px 480px;
+    gap: 20px;
+    background: #F6F6F6;
+}
+
+h2 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 480px;
+}
+
+.about-text p {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#skills {
+    padding-top: 100px;
+    margin: 0 auto;
+    gap: 50px;
+    width: 970px;
+    height: 564px;
+    background: #FFFFFF;
+} 
+
+.skills-info {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    margin: 20px auto 50px;
+}
+
+.skills-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 97px;
+    width: 970px;
+    height: 230px;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 170px;
+    height: 230px;
+}
+
+.skills-item-icon {
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+.skills-item-text {
+    width: 78px;
+    height: 38px;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #828282; 
+}
+
+.skills-item-stars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: 170px;
+    height: 26px;
+}
+
+.skills-item-stars img {
+    width: 26px;
+    height: 26px;
+}
+
+#portfolio {
+    padding-top: 100px;
+    background: #F6F6F6;
+}
+
+#portfolio h2 {
+    margin-bottom: 50px;
+}
+
+#portfolio figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-image {
+    width: 970px;
+    height: 540px;
+}
+
+.portfolio-text {
+    padding: 40px 0 70px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.portfolio-text a {
+    text-decoration: none;
+    color: #070707;
+}
+
+#contacts {
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 970px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts h2 {
+    margin-bottom: 20px;
+}
+
+.contacts-subtitle {
+    width: 280px;
+    height: 46px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+}
+
+#contacts button {
+    display: block;
+    margin: 0 auto 40px;
+    width: 180px;
+    height: 44px;
+    background: #070707;
+    border-radius: 22px;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    width: 310px;
+    height: 40px;
+    margin: 0 auto 60px;
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-text {
+    width: 200px;
+    height: 60px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
+}

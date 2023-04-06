@@ -1,0 +1,162 @@
+header, main {
+    width: 1200px;
+}
+
+header {
+    margin: 13px auto 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-info {
+    width: 361px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-language {
+    font-family: 'Tourney', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.header-nav li:last-of-type:before {
+    content: "/";
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-right: 10px;
+}
+
+header img {
+    width: 238px;
+    height: 54px;
+}
+
+.subtitle {
+    font-family: 'Francois One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+    height: 48px; 
+    position: relative;
+}
+
+main {
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+.introduction {
+    width: 344px;
+}
+
+::after {
+    font-family: 'Farro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-transform: none;
+    position: absolute;
+    top: -6px;
+    right: 33px;
+}
+
+.introduction::after {
+    content: "Chapter 1";
+}
+
+.components {
+    width: 420px;
+}
+
+.components::after {
+    content: "Chapter 2";
+}
+
+
+.react {
+    width: 477px;
+}
+
+.react::after {
+    content: "Chapter 3";
+}
+
+.handling {
+    width: 465px;
+}
+
+.handling::after {
+    content: "Chapter 4";
+}
+
+section p, section ul li {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.background {
+    background-color: rgb(226, 226, 226);
+}
+
+section ul li::before {
+    content: "+";
+}
+
+
