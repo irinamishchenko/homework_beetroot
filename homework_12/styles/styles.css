@@ -1,0 +1,233 @@
+main {
+    width: 500px;
+    height: 590px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    margin-bottom: 22px;
+}
+
+.name-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+label[for="first-name"], label[for="last-name"], label[for="email"], label[for="country"], label[for="city"] {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+input[type="text"], input[type="email"], select {
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"] {
+    padding-left: 10px;
+}
+
+input[type="text"], select {
+    width: 245px;
+}
+
+label[for="email"]::after {
+    content: "We'll never share your email with anyone else.";
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+    margin-top: 7px;
+}
+
+.gender {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type="radio"] {
+    opacity: 0;
+}
+
+label[for="male"], label[for="female"] {
+    position: relative;
+    padding-left: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label[for="male"] {
+    width: 50px;
+}
+
+label[for="female"] {
+    width: 68px;
+}
+
+.radio-inactive {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid #E4E4E4;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.radio-active {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid #E4E4E4;
+    cursor: pointer;
+    background-color: #007BFF;
+    display: none;
+}
+
+.radio-active::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked ~ .radio-active {
+    display: block;
+} 
+
+.location {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    display: block;
+    background-image: url(../images/select-icon.png);
+    background-repeat: no-repeat;
+    background-position: bottom 11px right 12px;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    width: 500px;
+    height: 38px;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+}
+
+input:focus {
+    border: 2px solid rgba(0, 123, 255, 1);
+}
+
+select:focus {
+    border: 2px solid rgba(0, 123, 255, 1);
+}
+
+.add-info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #969696;
+    width: 410px;
+    margin: 0 auto 41px;
+}
+
+.add-info a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.login {
+    display: flex;
+    width: 178px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.login p, .login a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.login p {
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+.login a {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+}
