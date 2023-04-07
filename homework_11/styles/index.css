@@ -140,7 +140,19 @@ section {
     width: 344px;
 }
 
-::after {
+.components {
+    width: 420px;
+}
+
+.react {
+    width: 477px;
+}
+
+.handling {
+    width: 465px;
+}
+
+.subtitle-chapter {
     font-family: 'Farro', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -152,34 +164,6 @@ section {
     position: absolute;
     top: 22px;
     right: 33px;
-}
-
-.introduction::after {
-    content: "Chapter 1";
-}
-
-.components {
-    width: 420px;
-}
-
-.components::after {
-    content: "Chapter 2";
-}
-
-.react {
-    width: 477px;
-}
-
-.react::after {
-    content: "Chapter 3";
-}
-
-.handling {
-    width: 465px;
-}
-
-.handling::after {
-    content: "Chapter 4";
 }
 
 section p, section ul li {
