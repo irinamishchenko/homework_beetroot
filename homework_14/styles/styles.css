@@ -1,0 +1,187 @@
+main {
+  width: 1170px;
+  height: 757px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+main p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #898F8F;
+  margin-bottom: 15px;
+}
+main h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #FFCC00;
+  text-align: center;
+}
+main h1::after {
+  content: url(../images/divider.png);
+  display: block;
+  margin-bottom: 40px;
+}
+main .team-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1030px;
+  height: 560px;
+}
+main .team-container .team-photo {
+  display: flex;
+  align-items: center;
+  width: 515px;
+  border-right: 1px solid #FFCC00;
+}
+main .team-container .team-photo .photo-wrapper {
+  width: 430px;
+  height: 430px;
+  background-image: linear-gradient(to right, #FFCC00 100px, transparent 20px, transparent 330px, #FFCC00 280px), linear-gradient(to right, #FFCC00 100px, transparent 20px, transparent 330px, #FFCC00 280px), linear-gradient(to bottom, #FFCC00 100px, transparent 20px, transparent 330px, #FFCC00 80px), linear-gradient(to bottom, #FFCC00 100px, transparent 20px, transparent 330px, #FFCC00 80px);
+  background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .team-container .team-photo .photo-wrapper img {
+  width: 400px;
+  height: 400px;
+}
+main .team-container .team-info {
+  display: flex;
+  align-items: center;
+  width: 515px;
+  justify-content: flex-end;
+}
+main .team-container .team-info .info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .team-container .team-info .info-wrapper h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+}
+main .team-container .team-info .info-wrapper h2::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #FFCC00;
+  display: block;
+  margin: 30px auto;
+}
+main .team-container .team-info .info-wrapper p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 30px;
+}
+main .team-container .team-info .info-wrapper .socials {
+  width: 135px;
+  height: 30px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+main .team-container .team-info .info-wrapper .socials li {
+  border: 2px solid #CCCCCC;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .team-container .team-info .info-wrapper .socials a svg {
+  fill: #CCCCCC;
+  height: 12px;
+}
+main .team-container .team-info .info-wrapper .socials .facebook {
+  width: 6.5px;
+}
+main .team-container .team-info .info-wrapper .socials .twitter {
+  width: 15px;
+}
+main .team-container .team-info .info-wrapper .socials .google {
+  width: 19px;
+}
+main .team-container .team-info .info-wrapper .socials .linkedin {
+  width: 12px;
+}
+main .team-container .team-info .info-wrapper .team-description {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  width: 430px;
+  margin-bottom: 20px;
+}
+main .team-container .team-info .info-wrapper .slider {
+  width: 20px;
+  height: 4px;
+  background: #FFCC00;
+  position: relative;
+  margin-bottom: 30px;
+}
+main .team-container .team-info .info-wrapper .slider::before {
+  content: "";
+  content: "";
+  width: 10px;
+  height: 4px;
+  background: #FFCC00;
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+main .team-container .team-info .info-wrapper .slider::after {
+  content: "";
+  width: 10px;
+  height: 4px;
+  background: #FFCC00;
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+main .team-container .team-info .info-wrapper button {
+  padding: 5px 10px;
+  width: 118px;
+  height: 24px;
+  border: 1px solid #FFCC00;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=styles.css.map */

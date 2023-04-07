@@ -1,0 +1,196 @@
+$primary-font: 'Raleway', sans-serif;
+$secondary-font:'Roboto', sans-serif;
+$golden: #FFCC00;
+$gray: #666666;
+
+@mixin slider {
+    content: "";
+    width: 10px;
+    height: 4px;
+    background: $golden;
+    position: absolute;
+    top: 0;
+}
+
+@mixin container {
+    display: flex;
+    align-items: center;
+    width: 515px;
+}
+
+main {
+    width: 1170px;
+    height: 757px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #898F8F;
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-family: $secondary-font;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: $golden;
+        text-align: center;
+        &::after {
+            content: url(../images/divider.png);
+            display: block;
+            margin-bottom: 40px;
+        }
+    }
+    .team-container {
+        display: flex;
+        justify-content: space-between;
+        width: 1030px;
+        height: 560px;
+        .team-photo {
+            @include container;
+            border-right: 1px solid $golden;
+            .photo-wrapper {
+                width: 430px;
+                height: 430px;
+                background-image: linear-gradient(to right, $golden 100px, transparent 20px, transparent 330px, $golden 280px),
+                linear-gradient(to right, $golden 100px, transparent 20px, transparent 330px, $golden 280px),
+                linear-gradient(to bottom, $golden 100px, transparent 20px, transparent 330px, $golden 80px),
+                linear-gradient(to bottom, $golden 100px, transparent 20px, transparent 330px, $golden 80px);
+                background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+                background-position: 0 0, 0 100%, 0 0, 100% 0;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+        .team-info {
+            @include container;
+            justify-content: flex-end;
+            .info-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    font-family: $secondary-font;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: $gray;
+                    &::after {
+                        content: "";
+                        width: 100px;
+                        height: 1px;
+                        background-color: $golden;
+                        display: block;
+                        margin: 30px auto;
+                    }
+                }
+                p {
+                    font-family: $primary-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 36px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: $gray;
+                    margin-bottom: 30px;
+                }
+                .socials {
+                    width: 135px;
+                    height: 30px;
+                    display: flex;
+                    gap: 5px;
+                    margin-bottom: 50px;
+                    li {
+                        border: 2px solid #CCCCCC;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    } 
+                    a svg {
+                        fill: #CCCCCC;
+                        height: 12px;
+                    }
+                    .facebook {
+                        width: 6.5px;
+                    }
+                    .twitter {
+                        width: 15px;
+                    }
+                    .google {
+                        width: 19px;
+                    }
+                    .linkedin {
+                        width: 12px;
+                        
+                    }
+                }
+                .team-description {
+                    font-family: $primary-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #333333;
+                    width: 430px;
+                    margin-bottom: 20px;
+                }
+                .slider {
+                    width: 20px;
+                    height: 4px;
+                    background: $golden;
+                    position: relative;
+                    margin-bottom: 30px;
+                    &::before {
+                        content: "";
+                        @include slider;
+                        left: -15px;
+                    }
+                    &::after {
+                        @include slider;
+                        right: -15px;
+                    }
+                }
+                button {
+                    padding: 5px 10px;
+                    width: 118px;
+                    height: 24px;
+                    border: 1px solid $golden;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $gray;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
