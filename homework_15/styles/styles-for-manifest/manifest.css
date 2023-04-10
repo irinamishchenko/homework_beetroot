@@ -532,5 +532,117 @@ footer .footer-container .footer-links li:hover a svg {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 320px) {
+  header .header-container {
+    width: 300px;
+  }
+  header .header-container .header-icons-wrapper {
+    height: 20px;
+    align-items: center;
+    gap: 20px;
+  }
+  .first-screen {
+    height: 500px;
+  }
+  .first-screen h1 {
+    width: 300px;
+    padding-top: 70px;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  .blog {
+    width: 300px;
+    height: 1364px;
+  }
+  .blog .blog-list {
+    gap: 50px;
+  }
+  .blog .blog-list .blog-list-item {
+    gap: 37px;
+    width: 300px;
+    height: 600px;
+    flex-direction: column-reverse;
+  }
+  .blog .blog-list .blog-list-item:last-of-type {
+    flex-direction: column-reverse;
+  }
+  .blog .blog-list .blog-list-item .blog-list-image {
+    width: 300px;
+    height: 250px;
+  }
+  .blog .blog-list .blog-list-item .blog-list-info-container {
+    width: 300px;
+    height: 320px;
+  }
+  .posts {
+    width: 300px;
+    height: 1502px;
+    gap: 30px;
+  }
+  .posts .posts-title-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .posts .posts-list {
+    gap: 25px;
+  }
+  .posts .posts-list .posts-list-item {
+    flex-direction: column;
+  }
+  .posts .posts-list .posts-list-item:nth-child(even) {
+    flex-direction: column;
+  }
+  .posts .posts-list .posts-list-item img {
+    width: 300px;
+    height: 210px;
+  }
+  .popular {
+    width: 300px;
+    height: 1181px;
+    gap: 30px;
+  }
+  .popular .popular-title-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .popular .popular-list {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  .popular .popular-list .popular-list-item img {
+    width: 300px;
+    height: 150px;
+  }
+  .info {
+    width: 300px;
+    height: 454px;
+    margin: 70px auto;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .info .info-description {
+    width: 300px;
+    height: 244px;
+  }
+  .info .info-description p {
+    text-align: left;
+  }
+  footer {
+    height: 421px;
+  }
+  footer .footer-container {
+    width: 300px;
+  }
+  footer .footer-container .footer-info h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  footer .footer-container .footer-info p {
+    font-style: 18px;
+  }
+}
 
 /*# sourceMappingURL=manifest.css.map */
