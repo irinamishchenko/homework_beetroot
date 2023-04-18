@@ -71,7 +71,7 @@
         <div class="main-box">
             <img src="images/images-for-navigation/bg.png" alt="background">
         </div>
-        <aside>
+        <aside class="aside-menu-container">
             <svg class="arrow">
                 <use xlink:href="images/images-for-navigation/sprite.svg#arrow-left"></use>
             </svg>
@@ -81,46 +81,76 @@
                         <svg>
                             <use xlink:href="images/images-for-navigation/sprite.svg#dashboard"></use>
                         </svg>
-                        Dashboard</a></li>
+                        <span class="aside-menu-item-text">Dashboard</span>
+                    </a></li>
                 <span class="aside-menu-divider"></span>
                 <li class="aside-menu-item"><a class="email" href="#">
                         <svg>
                             <use xlink:href="images/images-for-navigation/sprite.svg#email"></use>
                         </svg>
-                        Email</a></li>
+                        <span class="aside-menu-item-text">Email</span></a></li>
                 <li class="aside-menu-item"><a class="chats" href="#">
                         <svg>
                             <use xlink:href="images/images-for-navigation/sprite.svg#chats"></use>
                         </svg>
-                        Chats</a></li>
+                        <span class="aside-menu-item-text">Chats</span></a></li>
                 <li class="aside-menu-item"><a class="calendar" href="#">
                         <svg>
                             <use xlink:href="images/images-for-navigation/sprite.svg#calendar"></use>
                         </svg>
-                        Calendar</a></li>
+                        <span class="aside-menu-item-text">Calendar</span></a></li>
                 <li class="aside-menu-item"><a href="#">
                         <svg>
                             <use xlink:href="images/images-for-navigation/sprite.svg#news"></use>
                         </svg>
-                        News</a></li>
+                        <span class="aside-menu-item-text">News</span></a></li>
                 <li class="aside-menu-item"><a href="#">
                         <svg>
                             <use xlink:href="images/images-for-navigation/sprite.svg#knowledge"></use>
                         </svg>
-                        Knowlrdge</a></li>
+                        <span class="aside-menu-item-text">Knowlrdge</span></a></li>
                 <li class="aside-menu-item"><a href="#">
                         <svg>
                             <use xlink:href="images/images-for-navigation/sprite.svg#file"></use>
                         </svg>
-                        File manager</a></li>
+                        <span class="aside-menu-item-text">File manager</span></a></li>
                 <li class="aside-menu-item"><a href="#">
                         <svg>
                             <use xlink:href="images/images-for-navigation/sprite.svg#map"></use>
                         </svg>
-                        Leaflet Maps</a></li>
+                        <span class="aside-menu-item-text">Leaflet Maps</span></a></li>
             </ul>
         </aside>
     </main>
+    <script>
+        let button = document.getElementsByClassName('arrow')[0];
+        let menu = document.getElementsByClassName('aside-menu-container')[0];
+        let texts = document.getElementsByClassName('aside-menu-item-text');
+        let menuItems = document.getElementsByClassName('aside-menu-item');
+        console.log(menuItems);
+
+        button.addEventListener("click", function (e) {
+            if (menu.style.width === "110px") {
+                menu.style.width = "80px";
+                button.style.transform = "rotate(180deg)";
+                for (let text of texts) {
+                    text.style.display = "none";
+                }
+                for (let menuItem of menuItems) {
+                    menuItem.style.width = "80px";
+                }
+            } else {
+                menu.style.width = "110px";
+                button.style.transform = "rotate(360deg)";
+                for (let text of texts) {
+                    text.style.display = "block";
+                }
+                for (let menuItem of menuItems) {
+                    menuItem.style.width = "110px";
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
