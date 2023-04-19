@@ -1,0 +1,291 @@
+* p, h1, h2 {
+  font-style: normal;
+}
+
+header {
+  width: 1170px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+header p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+main {
+  width: 1170px;
+  margin: 0 auto;
+}
+main h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 70px;
+}
+main section {
+  margin: 0 auto 90px;
+}
+main section h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 50px;
+}
+main section picture img {
+  margin-bottom: 20px;
+  width: 1170px;
+  height: 500px;
+}
+main section div {
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+main section div p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+main .first-screen picture img {
+  margin-bottom: 90px;
+}
+main .first-screen div {
+  height: 255px;
+  width: 570px;
+}
+main .sketches div {
+  height: 158px;
+}
+main .design p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+  height: 96px;
+}
+
+footer {
+  background-color: #F4F4F4;
+  height: 300px;
+}
+footer .footer-container {
+  width: 1170px;
+  height: 160px;
+  margin: 0 auto;
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-container .footer-contacts {
+  width: 375px;
+  height: 160px;
+}
+footer .footer-container .footer-contacts h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 30px;
+}
+footer .footer-container .footer-contacts p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+footer .footer-container .footer-contacts p:first-of-type {
+  margin-bottom: 14px;
+}
+footer .footer-container .footer-socials {
+  width: 269px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-container .footer-socials li {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #565656;
+}
+footer .footer-container .footer-socials li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container .footer-socials li a svg {
+  height: 24px;
+  width: 24px;
+  fill: #565656;
+}
+footer .footer-container .footer-socials li:hover {
+  background: #565656;
+}
+footer .footer-container .footer-socials li:hover a svg {
+  fill: #FFFFFF;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  header {
+    width: 700px;
+    height: 60px;
+    margin-bottom: 50px;
+  }
+  main {
+    width: 700px;
+    margin: 0 auto;
+  }
+  main h1 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+  main section {
+    margin: 0 auto 70px;
+  }
+  main section h2 {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+  main section picture img {
+    width: 699px;
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  main section div {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  main section div p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+  }
+  main .first-screen div {
+    width: 700px;
+    height: 190px;
+  }
+  main .research div {
+    height: 275px;
+  }
+  main .design p {
+    height: 160px;
+  }
+  footer {
+    height: 410px;
+  }
+  footer .footer-container {
+    width: 700px;
+    height: 250px;
+    padding-top: 50px;
+    flex-direction: column;
+  }
+  footer .footer-container .footer-contacts {
+    text-align: center;
+  }
+  footer .footer-container .footer-contacts h2 {
+    margin-bottom: 20px;
+  }
+  footer .footer-container .footer-contacts p:first-of-type {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    width: 300px;
+    margin-bottom: 0;
+  }
+  main {
+    width: 300px;
+  }
+  main h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  main section h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  main section picture img {
+    width: 300px;
+    height: 300px;
+  }
+  main section div p {
+    font-size: 16px;
+  }
+  main .first-screen picture img {
+    margin-bottom: 70px;
+  }
+  main .first-screen div {
+    width: 300px;
+    height: 350px;
+  }
+  main .research div {
+    height: 475px;
+  }
+  main .sketches div {
+    height: 340px;
+  }
+  main .design p {
+    height: 280px;
+    font-size: 16px;
+  }
+  footer {
+    height: 421px;
+  }
+  footer .footer-container {
+    width: 300px;
+    height: 227px;
+    flex-direction: column;
+  }
+  footer .footer-container .footer-contacts {
+    text-align: center;
+  }
+  footer .footer-container .footer-contacts h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  footer .footer-container .footer-contacts p {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
