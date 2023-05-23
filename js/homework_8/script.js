@@ -54,6 +54,25 @@ function sortTable(index) {
 
 // Task 3
 
-// let button = document.querySelector(".button");
-// let width = button.offsetWidth;
-// let height = button.offsetHeight;
+let container = document.querySelector(".container");
+let width = container.offsetWidth;
+let height = container.offsetHeight;
+
+container.onmousedown = function (event) {
+  let coordX = event.pageX;
+  let coordY = event.pageY;
+  console.log(coordX, coordY);
+
+  document.addEventListener("mousemove", moveAt);
+
+  function moveAt(event) {
+    let newCoordX = event.pageX;
+    let newCoordY = event.pageY;
+    container.style.width = width + (newCoordX - coordX) + "px";
+    container.style.height = height + (newCoordY - coordY) + "px";
+  }
+
+  document.onmouseup = function () {
+    document.removeEventListener("mousemove", moveAt);
+  };
+};
