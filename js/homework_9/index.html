@@ -24,9 +24,9 @@
       <img class="header-logo" src="images/logo-header.png" alt="logo" />
       <ul class="header-menu">
         <li class="header-menu-item"><a href="#">Home</a></li>
-        <li class="header-menu-item"><a href="#">Catalog</a></li>
-        <li class="header-menu-item"><a href="#">News</a></li>
-        <li class="header-menu-item"><a href="#">Contacts</a></li>
+        <li class="header-menu-item"><a href="#catalog">Catalog</a></li>
+        <li class="header-menu-item"><a href="#partners">News</a></li>
+        <li class="header-menu-item"><a href="#contacts">Contacts</a></li>
       </ul>
       <ul class="header-icons">
         <li>
@@ -44,6 +44,9 @@
           </a>
         </li>
       </ul>
+      <div class="burger-menu">
+        <img src="images/burger-menu.png" alt="burger-menu" />
+      </div>
     </header>
     <main>
       <section class="first-screen">
@@ -70,12 +73,11 @@
                 <button>View more</button>
               </div>
             </div>
-            ...
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <h2 class="catalog-title">New arrivals</h2>
         <div class="catalog-slider-container">
           <svg class="catalog-button-left">
@@ -142,10 +144,12 @@
           <svg class="catalog-button-right">
             <use xlink:href="images/sprite.svg#control-right-icon"></use>
           </svg>
+          <div class="catalog-swiper-pagination"></div>
         </div>
+
         <button class="catalog-btn">View more</button>
       </section>
-      <section class="partners">
+      <section class="partners" id="partners">
         <h2 class="partners-title">Our partners</h2>
         <div class="partner-slider-container">
           <svg class="partner-button-left">
@@ -188,10 +192,11 @@
           <svg class="partner-button-right">
             <use xlink:href="images/sprite.svg#control-right-icon"></use>
           </svg>
+          <div class="partner-swiper-pagination"></div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="footer-container">
         <section class="footer-navigation">
           <img src="images/logo-footer.png" alt="logo" />
