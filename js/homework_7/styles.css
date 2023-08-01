@@ -1,0 +1,58 @@
+.btn {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.modal {
+  background-color: antiquewhite;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.traffic-light {
+  width: 80px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.active {
+  opacity: 1;
+}
+
+.change-light-btn {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+}
