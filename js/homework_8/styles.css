@@ -1,0 +1,24 @@
+.textarea {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 4px;
+}
+th {
+  cursor: pointer;
+}
+th:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+}
