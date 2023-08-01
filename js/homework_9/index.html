@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Homework 9</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header-logo" src="images/logo-header.png" alt="logo" />
+      <ul class="header-menu">
+        <li class="header-menu-item"><a href="#">Home</a></li>
+        <li class="header-menu-item"><a href="#catalog">Catalog</a></li>
+        <li class="header-menu-item"><a href="#partners">News</a></li>
+        <li class="header-menu-item"><a href="#contacts">Contacts</a></li>
+      </ul>
+      <ul class="header-icons">
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-search"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-profile"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="burger-menu">
+        <img src="images/burger-menu.png" alt="burger-menu" />
+      </div>
+    </header>
+    <main>
+      <section class="first-screen">
+        <div class="swiper first-screen-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/first-screen-slider-1.jpg" alt="" />
+              <div class="slider-content">
+                <h1>discover new options</h1>
+                <button>View more</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/first-screen-slider-2.jpg" alt="" />
+              <div class="slider-content">
+                <h1>Expand your horizons</h1>
+                <button>View more</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/first-screen-slider-3.jpg" alt="" />
+              <div class="slider-content">
+                <h1>Find your own style</h1>
+                <button>View more</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="catalog" id="catalog">
+        <h2 class="catalog-title">New arrivals</h2>
+        <div class="catalog-slider-container">
+          <svg class="catalog-button-left">
+            <use xlink:href="images/sprite.svg#control-left-icon"></use>
+          </svg>
+          <div class="swiper catalog-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="product-status in-stock">In stock</p>
+                <div class="product-content">
+                  <img src="images/product-item-1.jpg" alt="" />
+                  <h3 class="product-title">Hagstrom Alvar Limited Edition</h3>
+                  <p class="product-price">€2.990,00</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="product-status in-stock">In stock</p>
+                <div class="product-content">
+                  <img src="images/product-item-2.jpg" alt="" />
+                  <h3 class="product-title">
+                    Hagstrom Tremar Viking Deluxe Cloudy Seas
+                  </h3>
+                  <p class="product-price">€1.300,00</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="product-status sold">Sold</p>
+                <div class="product-content">
+                  <img src="images/product-item-3.jpg" alt="" />
+                  <h3 class="product-title">Gibson Les Paul Standard 60s</h3>
+                  <p class="product-price">€3.749,00</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="product-status in-stock">In stock</p>
+                <div class="product-content">
+                  <img src="images/product-item-4.jpg" alt="" />
+                  <h3 class="product-title">
+                    Suhr Standard Plus Trans Blue Denim
+                  </h3>
+                  <p class="product-price">€3.449,00</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="product-status in-stock">In stock</p>
+                <div class="product-content">
+                  <img src="images/product-item-5.jpg" alt="" />
+                  <h3 class="product-title">
+                    Fender Telecaster Black Paisley Limited Edition
+                  </h3>
+                  <p class="product-price">€1.499,00</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="product-status sold">Sold</p>
+                <div class="product-content">
+                  <img src="images/product-item-1.jpg" alt="" />
+                  <h3 class="product-title">Hagstrom Alvar Limited Edition</h3>
+                  <p class="product-price">€2.990,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <svg class="catalog-button-right">
+            <use xlink:href="images/sprite.svg#control-right-icon"></use>
+          </svg>
+          <div class="catalog-swiper-pagination"></div>
+        </div>
+
+        <button class="catalog-btn">View more</button>
+      </section>
+      <section class="partners" id="partners">
+        <h2 class="partners-title">Our partners</h2>
+        <div class="partner-slider-container">
+          <svg class="partner-button-left">
+            <use xlink:href="images/sprite.svg#control-left-icon"></use>
+          </svg>
+          <div class="swiper partners-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-epiphone.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-esp.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-gibson.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-engl.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-roland.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-fender.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-peavey.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-marshal.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-orange.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/partner-epiphone.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <svg class="partner-button-right">
+            <use xlink:href="images/sprite.svg#control-right-icon"></use>
+          </svg>
+          <div class="partner-swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="footer-container">
+        <section class="footer-navigation">
+          <img src="images/logo-footer.png" alt="logo" />
+          <ul class="footer-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </section>
+        <section class="footer-contacts">
+          <h3>Contact us</h3>
+          <ul class="footer-socials">
+            <li>
+              <a href="#">
+                <svg class="icon-filled">
+                  <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon-filled">
+                  <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon-filled">
+                  <use xlink:href="images/sprite.svg#icon-pinterest"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon-stroke">
+                  <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon-stroke">
+                  <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer-tel" href="tel:08003004040">0800 300 4040</a>
+        </section>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
